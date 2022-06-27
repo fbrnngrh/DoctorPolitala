@@ -27,6 +27,7 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: type => ({
+    padding: 20,
     paddingHorizontal: 16,
     paddingVertical: 30,
     backgroundColor: type === 'dark' ? colors.secondary : colors.white,

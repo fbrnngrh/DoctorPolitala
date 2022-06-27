@@ -22,7 +22,7 @@ const Splash = ({navigation}) => {
   return (
     <View style={styles.page}>
       <ILLogo />
-      <Text style={styles.title}>Doctor App</Text>
+      <Text style={styles.title}>Doctor Klinik Politala</Text>
     </View>
   );
 };

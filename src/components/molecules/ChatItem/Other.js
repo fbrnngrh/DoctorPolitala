@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import {colors, fonts} from '../../../utils';
-import {DummyDoctor9} from '../../../assets';
 
 const Other = ({text, date, photo}) => {
   return (
@@ -20,20 +19,25 @@ const Other = ({text, date, photo}) => {
 export default Other;
 
 const styles = StyleSheet.create({
+  avatar: {
+    width: 30,
+    height: 30,
+    borderRadius: 30 / 2,
+    marginRight: 12,
+  },
+  chatContent: {
+    padding: 12,
+    paddingRight: 18,
+    backgroundColor: colors.primary,
+    maxWidth: '100%',
+    borderRadius: 10,
+    borderBottomLeftRadius: 0,
+  },
   container: {
     marginBottom: 20,
     alignItems: 'flex-end',
     paddingLeft: 16,
     flexDirection: 'row',
-  },
-  avatar: {width: 30, height: 30, borderRadius: 30 / 2, marginRight: 12},
-  chatContent: {
-    padding: 12,
-    paddingRight: 18,
-    backgroundColor: colors.primary,
-    maxWidth: '80%',
-    borderRadius: 10,
-    borderBottomLeftRadius: 0,
   },
   text: {
     fontSize: 14,
