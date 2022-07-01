@@ -85,14 +85,10 @@ const Chatting = ({navigation, route}) => {
       .then(() => {
         setChatContent('');
         // set history for user
-        Fire.database()
-          .ref(urlMessageUser)
-          .set(dataHistoryChatForUser);
+        Fire.database().ref(urlMessageUser).set(dataHistoryChatForUser);
 
         // set history for dataDoctor
-        Fire.database()
-          .ref(urlMessageDoctor)
-          .set(dataHistoryChatForDoctor);
+        Fire.database().ref(urlMessageDoctor).set(dataHistoryChatForDoctor);
       })
       .catch(err => {
         showError(err.message);
